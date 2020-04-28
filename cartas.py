@@ -16,13 +16,14 @@ def crea_baraja():
 def mezclar(b):
     i=0
     baraja_retorno=[]
-    while i < 40:
-        n = random.randint(0,39)
+    
+    while len(b) != len(breakpoint):
+        n = random.randint(0,len(b)-1)
         while b[n] in baraja_retorno:
-            n = random.randint(0,39)
+            n = random.randint(0,len(b)-1)
         baraja_retorno.append(b[n])
-        i += 1
-    b = baraja_retorno
+       
+    b[:] = baraja_retorno
     return b
 
 def reparte(b, players, cards,metodo=False):
