@@ -25,5 +25,6 @@ print(tu_b.naipes)
 print(tu_b.num_cartas())
 tu_b.recoger()
 print(tu_b.naipes)
+print(tu_b.num_cartas())
 
 
