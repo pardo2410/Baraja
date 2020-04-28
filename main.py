@@ -13,7 +13,17 @@ else:
 print(cartas.reparte(bm,Jugadores,cartas_j,metodo_r))
 '''
 import Clase_cartas
-mi_b= Clase_cartas.Baraja()
+
 tu_b= Clase_cartas.Baraja()
+print(tu_b.naipes)
 tu_b.mezclar()
-mi_b.num_cartas()
+print(tu_b.naipes)
+print(tu_b.num_cartas())
+tu_b.repartir(3,5)
+print(tu_b.mano)
+print(tu_b.naipes)
+print(tu_b.num_cartas())
+tu_b.recoger()
+print(tu_b.naipes)
+
+
