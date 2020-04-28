@@ -29,7 +29,6 @@ def reparte(b, players, cards,metodo=False):
     res = []
     
     if metodo == False:
-        p=0
         for p in range(players):
             res.append([])
         for ic in range(cards):
@@ -45,4 +44,4 @@ def reparte(b, players, cards,metodo=False):
                     carta = b.pop(0)
                     res[ic].append(carta)
         return res
-
+    

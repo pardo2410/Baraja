@@ -1,3 +1,4 @@
+'''
 import cartas
 b1 = cartas.crea_baraja()
 bm = cartas.mezclar(b1)
@@ -10,3 +11,9 @@ if metodo_r =='N':
 else:
     metodo_r = True
 print(cartas.reparte(bm,Jugadores,cartas_j,metodo_r))
+'''
+import Clase_cartas
+mi_b= Clase_cartas.Baraja()
+tu_b= Clase_cartas.Baraja()
+tu_b.mezclar()
+mi_b.num_cartas()
